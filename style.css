@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/*
+***********
+GENERAL SETUP
+***********
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+#background-image {
+  position: absolute;
+  z-index: -1;
+  width: 100%; 
+  margin: 0 auto; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*
+***********
+MAIN
+***********
+*/
+
+#main-container {
+  position: absolute;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 5px rgba(174, 21, 21, 1);
+  border-radius: 10px;
+  left: 1.6rem;
+  right: 1.6rem;
+  top: 6rem;
+  bottom: 6rem;
+  height: 60svh;
+}
+
+/*
+***********
+FAQS CONTAINER (TITLE)
+***********
+*/
+
+#FAQs-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+#FAQs-star {
+  width: 30px;
+}
+
+/*
+***********
+FAQS LIST
+***********
+*/
+
+#FAQs-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question {
+  margin: 20px 0;
+  width: 230px;
+}
+
+.plus-icon {
+  width: 35px;
+}
+
+.question-container > .question {
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, .5);
+}
+
+/*
+***********
+ANSWER
+***********
+*/
+
+.answer {
+  margin-bottom: 20px;
+  font-size: .9rem;
+  color: hsla(292, 42%, 14%, .7);
+  width: 300px;
+  line-height: 25px;
+}
+
+/*
+***********
+ATTRIBUTION
+***********
+*/
+
+.attribution { 
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .8rem; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1440px) {
+  #main-container {
+    width: 500px;
+    margin: 0 auto;
+    top: 10rem;
+    bottom: 7rem;
+  }
+
+  #FAQs-title {
+    font-size: 2.8rem;
+  }
+  
+  .question {
+    width: 500px;
+    margin: 30px 0;
+  }
+ 
+}
